@@ -16,13 +16,13 @@ func main() {
 		} else if i%10 == 0 {
 			modifiedKey = fmt.Sprintf("%v-%v", key, 10)
 		} else {
-			modifiedKey = fmt.Sprintf("%v-%v", key, i)
+			modifiedKey = fmt.Sprintf("%v-%v", key, 5)
 		}
 		minsketch.SetKeyCount(modifiedKey)
 
 	}
 
-	key := fmt.Sprintf("min-sketch-10")
+	key := fmt.Sprintf("min-sketch-5")
 	count := minsketch.GetKeyCount(key)
 	fmt.Printf("count of the min sketch %v \n", count)
 }
